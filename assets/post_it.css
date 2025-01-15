@@ -1,0 +1,82 @@
+h1 {
+  color: white;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: .5em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 3px;
+  font-size: 45px;
+  text-shadow: 2px 4px 5px rgb(83, 82, 82);
+}
+
+.postContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 25em;
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 3em 2fr 2fr;
+  grid-template-rows: 3em 2fr;
+  grid-template-areas: 
+  "skew texto texto"
+  "aux texto texto"
+  ;
+  filter: drop-shadow(5px 5px 10px black);
+  margin: 1em auto 1em auto;
+  flex-basis: 23em;
+}
+
+.skew {
+  grid-area: skew;
+  background-color: var(--post_It_background);
+  transform: skew(-40deg) translateX(20px);
+}
+
+.skew_2 {
+  grid-area: skew;
+  background-color: rgb(221, 219, 219);
+  transform: skew(-40deg) translateX(20px);
+  filter: drop-shadow(1px 1px 3px rgba(29, 29, 29, 0.5));
+}
+
+.skew_3 {
+  grid-area: skew;
+  background-color: rgb(224, 222, 222);
+  transform: skew(-40deg) translateX(20px);
+}
+
+.post_it {
+  grid-area: texto;
+  background-color: var(--post_It_background);
+  z-index: 10;
+  box-sizing: border-box;
+  padding: 2em;
+  max-height: 20em;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(8, 8, 102);
+}
+
+.post_it p {
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 1em;
+}
+
+.post_it h2 {
+  font-size: 25px;
+  text-shadow: 2px 2px 5px rgba(8, 8, 102, 0.486);
+}
+
+.aux {
+  background-color: var(--post_It_background);
+}
+
+
+
+
+
